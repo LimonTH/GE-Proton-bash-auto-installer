@@ -9,7 +9,7 @@ Enter the command to edit crontab:
 crontab -e
 @reboot /path/to/protonGE_Updater.sh
 
-# Systemd:
+# Systemd
 ./bash
 sudo nano /etc/systemd/system/protonGE_Updater.service
 
