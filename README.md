@@ -5,20 +5,33 @@ For example, let's take cron:
 
 # Crontab
 Enter the command to edit crontab:
+
 ./bash
+
 crontab -e
+
 @reboot /path/to/protonGE_Updater.sh
 
 # Systemd
+
 ./bash
+
 sudo nano /etc/systemd/system/protonGE_Updater.service
 
 Example file for Systemd:
+
 [Unit]
+
 Description=protonGE_Updater
+
 [Service]
+
 ExecStart=/path/to/protonGE_Updater.sh
+
 Restart=always
+
 User=LimonTH
+
 [Install]
+
 WantedBy=multi-user.target
