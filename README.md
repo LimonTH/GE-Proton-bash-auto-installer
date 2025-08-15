@@ -3,15 +3,17 @@ A script that allows you to easily update GE-Proton without doing unnecessary st
 To run the script automatically, you will need a utility to run the scripts when the PC starts, or systemd if you use it.
 For example, let's take cron:
 
+# Crontab
 Enter the command to edit crontab:
-# bash
+./bash
 crontab -e
 @reboot /path/to/protonGE_Updater.sh
 
-For systemd:
-# bash
+# Systemd:
+./bash
 sudo nano /etc/systemd/system/protonGE_Updater.service
-Example file:
+
+Example file for Systemd:
 [Unit]
 Description=protonGE_Updater
 [Service]
